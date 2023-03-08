@@ -72,20 +72,11 @@ total 4456
 -rw-r--r--. 1 root root 2062648 Mar  8 17:20 nginx-1.20.2-1.el8.ngx.x86_64.rpm  
 -rw-r--r--. 1 root root 2495892 Mar  8 17:20 nginx-debuginfo-1.20.2-1.el8.ngx.x86_64.rpm  
 
-Установим наш пакет и убедимся что он работает   
+ Установим наш пакет и убедимся что он работает   
 [root@RPM ~]# yum localinstall rpmbuild/RPMS/x86_64/nginx-1.20.2-1.el8.ngx.x86_64.rpm   
 Failed to set locale, defaulting to C.UTF-8   
 Last metadata expiration check: 0:20:10 ago on Wed Mar  8 18:29:36 2023.   
 Dependencies resolved.  
-==============================================================================================================================================================================================================  
- Package                                     Architecture                                 Version                                                    Repository                                          Size  
-==============================================================================================================================================================================================================  
-Installing:
- nginx                                       x86_64                                       1:1.20.2-1.el8.ngx                                         @commandline                                       2.4 M  
-
-Transaction Summary
-==============================================================================================================================================================================================================
-Install  1 Package  
 Total size: 2.4 M  
 Installed size: 7.2 M 
 Is this ok [y/N]: y 
@@ -172,7 +163,7 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 
 [root@RPM yum.repos.d]# curl -a http://localhost/repo/  
 <html>  
-<head><title>Index of /repo/</title></head>  
+head><title>Index of /repo/</title></head>  
 <body>  
 <h1>Index of /repo/</h1><hr><pre><a href="../">../</a>  
 <a href="repodata/">repodata/</a>                                           08-Mar-2023 20:16                   -  
